@@ -12,28 +12,27 @@ Post.init(
       autoIncrement: true,
     },
     post_header: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     body: {
       type: DataTypes.TEXT,
       allowNull: false,
     },
     user_id: {
       type: DataTypes.INTEGER,
-      references: 
-        {
+      references: {
         model: 'user',
         key: 'id',
-        },
+      },
     },
-},
+  },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "post",
+    modelName: 'post',
   }
 );
 
