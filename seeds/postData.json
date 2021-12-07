@@ -1,0 +1,22 @@
+[
+  {
+    "post_header": "Post #1",
+    "body": "Testing",
+    "user_id": 1
+  },
+  {
+    "post_header": "Post #2",
+    "body": "Testing",
+    "user_id": 1
+  },
+  {
+    "post_header": "Post #3",
+    "body": "Testing",
+    "user_id": 2
+  },
+  {
+    "post_header": "Post #4",
+    "body": "Testing",
+    "user_id": 2
+  }
+]
