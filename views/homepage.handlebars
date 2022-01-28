@@ -12,9 +12,7 @@
     <h2>{{post_header}}</h2>
     <p>Posted by: {{user_id}}</p>
     <p>{{body}}</p>
-    {{#each post.comments as |comment|}}
-    <p>{{comment.body}}</p>
-    {{/each}}
-    <button>Leave a Comment</button>
-  </div>
+   <p>Comments: {{post.comments.length}}</p>
+    <a href="/api/posts/{{id}}">View Post</a>
+    </div>
 {{/each}}
