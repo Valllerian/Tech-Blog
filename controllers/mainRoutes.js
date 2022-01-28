@@ -15,7 +15,7 @@ router.get('/', withAuth, async (req, res) => {
       ],
     });
     const posts = postData.map((posts) => posts.get({ plain: true }));
-    console.log(posts)
+   
     
     res.render('homepage', {
       posts,
@@ -48,6 +48,38 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+
+
+
+router.post('/', async (req, res) => {
+  console.log("=============================== Posting Post" );
+  console.log(req.body.body);
+  console.log(req.body.title);
+  Post.create({
+     
+          body: req.body.body,
+          post_header:  req.body.title,
+          user_id: req.session.user_id,
+    
+  }
+  )
+  
+      .then((newPost) => {
+          // Send the newly created row as a JSON object
+          console.log(newPost);
+          readAndAppend(newPost, '../../seeds/postData.json');
+
+          res.json(newPost);
+
+      })
+      
+      .catch((err) => {
+          res.json(err);
+      });
+  // render results
+
 });
 
 module.exports = router;

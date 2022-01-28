@@ -1,9 +1,6 @@
 
 const commentForm = document.querySelector('#comment-form');
 
-// create a function that uses commentData as a parameter (static)
-// read from submission
-// write into an object with the ID
 
 
 const commentFormHandler = async (event) => {

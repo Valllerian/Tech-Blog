@@ -19,12 +19,13 @@ router.get("/:id", async (req, res) => {
       
       req.session.save(() => {
         req.session.post_id = req.params.id;
-        console.log(req.session.post_id)
+        console.log(req.session.post_id);
+      
       });
       
       res.render('post', {
         postData,
-        loggedIn: req.session.loggedIn,
+        logged_in: req.session.logged_in,
         
   
       });
@@ -35,6 +36,5 @@ router.get("/:id", async (req, res) => {
   });
 
 
-  
 
 module.exports = router;

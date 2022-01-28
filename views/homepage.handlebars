@@ -17,4 +17,30 @@
     <a href="/api/posts/{{id}}">View Post</a>
     </div>
 {{/each}}
+
+<div class = "postArea"> 
+<div id = "post-form">
+  <div >
+    <h3>Add a New Post!</h3>
+    <form class="form">
+       <p>Post Title:</p>
+      <div class="form-group ">
+        <label for="post">
+        </label>
+        <textarea class="form-input" id="postTitle" name="post-title"></textarea>
+         <p>Post Content:</p>
+        <textarea class="form-input" id="post" name="post-content"></textarea>
+      </div>
+      <div class="form-group mx-auto" id="post-button">
+        <button type="submit" class="btn btn-primary">Add</button>
+      </div>
+    </form>
+  </div>
 </div>
+</div>
+    
+</div>
+
+</div>
+
+<script src="/js/post.js"></script>
