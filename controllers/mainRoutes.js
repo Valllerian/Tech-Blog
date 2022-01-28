@@ -23,6 +23,19 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
+router.get("/signUp", async (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect("/api/games/search");
+    return;
+  }
+  try {
+    res.render("signUp", {
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/login', (req, res) => {
   // If a session exists, redirect the request to the homepage
   if (req.session.logged_in) {

@@ -1,0 +1,177 @@
+header {
+  background-image: url('/images/image01.gif');
+  background-repeat:no-repeat;
+  height:20vmax;
+  background-color: #b1c0cb;
+}
+.navbar {
+  justify-content: flex-end;
+  background-color: rgb(34, 33, 33);
+}
+
+.btn {
+  margin-left: auto
+}
+
+nav {
+  height: 55px;
+  background-color: black;
+}
+
+.nav-link {
+  color: white
+}
+
+#login {
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 130px;
+}
+
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.profile {
+  background-color: white;
+  border: solid 2px black;
+  margin-bottom: 50px;
+}
+
+
+
+footer {
+  margin-top: 0px;
+  background-color: rgb(34, 33, 33);
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.stickyBottom {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  z-index: 1;
+  
+}
+
+main {
+  box-shadow: 0px -5px 75px 0 rgb(78, 77, 77) inset;
+  border-top: solid black 2px;
+  padding-top: 150px;
+  /* background-color: rgb(247, 243, 243);
+  background-color: white; */
+  padding-bottom: 100px;
+  margin-bottom: 0px;
+}
+
+main p {
+  font-weight: bold;
+}
+
+.page-title {
+  text-align: center;
+}
+
+#logout {
+  margin-left: 10px;
+}
+
+#logBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mainText {
+  display: block;
+}
+
+#mainText2 {
+  text-align: justify;
+}
+
+.container-fluid {
+  width: 80%;
+}
+
+.search {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.main {
+  background-color: white;
+}
+
+.mainD {
+  background-color: rgb(52, 54, 54);
+}
+
+#commentBox {
+  text-align: left;
+
+}
+
+.comment {
+
+  border: black 3px solid;
+  margin-top: 25px;
+  background-image: linear-gradient(rgb(52, 54, 54), white)
+}
+
+#commentInfo {
+  border-top: black 3px solid;
+  border-bottom: black 3px solid;
+  color: black;
+}
+
+.form-group {
+  display: block;
+}
+
+#commentText {
+  font-style: italic;
+  font-size: 20px;
+  padding-left: 5px;
+  color: black;
+}
+
+#comment-form {
+  margin-top: 25px;
+
+  width: 100%;
+}
+
+.commentArea {
+  text-align: center;
+}
