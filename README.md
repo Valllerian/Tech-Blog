@@ -24,7 +24,8 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 ## Usage 
     
 - Enter the root directory of the project; 
-- Run the app by entering:  `npm run start` ;
+- Seed the database:  `node seeds/seeds.js` ;
+- Start the server:  `node server.js`  |  use the deployed app;
 
 
 Main Routes :
