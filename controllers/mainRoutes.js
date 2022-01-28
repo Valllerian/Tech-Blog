@@ -6,15 +6,19 @@ const withAuth = require('../utils/auth');
 // Prevent non logged in users from viewing the homepage
 router.get('/', withAuth, async (req, res) => {
   try {
-    const userData = await User.findAll({
-      attributes: { exclude: ['password'] },
-      order: [['name', 'ASC']],
+  
+    const postData =  await Post.findAll({
+      include: [
+
+        { model: Comment, attributes: ["body", "post_id", "user_id"]},
+        
+      ],
     });
-
-    const users = userData.map((project) => project.get({ plain: true }));
-
+    const posts = postData.map((posts) => posts.get({ plain: true }));
+    console.log(posts)
+    
     res.render('homepage', {
-      users,
+      posts,
       // Pass the logged in flag to the template
       logged_in: req.session.logged_in,
     });
