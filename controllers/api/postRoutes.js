@@ -16,11 +16,16 @@ router.get("/:id", async (req, res) => {
             
           ],
       });
-      console.log(postData)
-     
+      
+      req.session.save(() => {
+        req.session.post_id = req.params.id;
+        console.log(req.session.post_id)
+      });
+      
       res.render('post', {
         postData,
         loggedIn: req.session.loggedIn,
+        
   
       });
     } catch (err) {
@@ -28,5 +33,8 @@ router.get("/:id", async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+
+  
 
 module.exports = router;

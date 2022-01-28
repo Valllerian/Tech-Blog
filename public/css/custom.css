@@ -98,9 +98,6 @@ main p {
   font-weight: bold;
 }
 
-.page-title {
-  text-align: center;
-}
 
 #logout {
   margin-left: 10px;
@@ -112,30 +109,9 @@ main p {
   align-items: center;
 }
 
-#mainText {
-  display: block;
-}
 
-#mainText2 {
-  text-align: justify;
-}
 
-.container-fluid {
-  width: 80%;
-}
 
-.search {
-  margin-top: 3%;
-  text-align: center;
-}
-
-.main {
-  background-color: white;
-}
-
-.mainD {
-  background-color: rgb(52, 54, 54);
-}
 
 #commentBox {
   text-align: left;
@@ -143,10 +119,9 @@ main p {
 }
 
 .comment {
-
   border: black 3px solid;
   margin-top: 25px;
-  background-image: linear-gradient(rgb(52, 54, 54), white)
+ background-color: rgb(243, 240, 240);
 }
 
 #commentInfo {
