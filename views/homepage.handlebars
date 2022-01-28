@@ -9,12 +9,14 @@
 </div>
 
 {{#each posts as |post|}}
-  <div>
-    <h2>{{post_header}}</h2>
+  <div class="container post">
+    <h2 class = "postHeader">{{post_header}}</h2>
     <p>Posted by: {{user_id}}</p>
     <p>{{body}}</p>
    <p>Comments: {{post.comments.length}}</p>
-    <a href="/api/posts/{{id}}">View Post</a>
+   <div class="flex-row" >
+<a   class="fullPost" href="/api/posts/{{id}}">View Post</a>
+   </div>
     </div>
 {{/each}}
 

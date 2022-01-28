@@ -110,12 +110,30 @@ main p {
 }
 
 
+.post {
+  border: black 3px solid;
+  margin-bottom: 15px;
+}
 
+.postHeader {
+ text-align: center;
+}
 
+.flex-row {
+  
+  display: flex; 
+  flex-direction: row; 
+  padding-bottom: 5px;
+ 
+}
+
+.fullPost {
+  color: #000;
+  margin-left: auto;
+}
 
 #commentBox {
   text-align: left;
-
 }
 
 .comment {
