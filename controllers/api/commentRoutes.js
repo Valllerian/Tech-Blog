@@ -6,7 +6,7 @@ const { Op } = require("sequelize");
 
 
 
-router.post('/', async (req, res) => {
+router.post('/comment', async (req, res) => {
     console.log("===============================" );
     Comment.create({
        
