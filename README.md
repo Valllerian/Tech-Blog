@@ -5,6 +5,9 @@
 A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<h3>Deployed app:</h3>
+<a href="https://tranquil-refuge-78917.herokuapp.com/" target="_blank">Click Me!</a>
     
 ## Table of Contents
 - [Installation](#installation)
