@@ -168,3 +168,9 @@ main p {
 .commentArea {
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 45px;
+  }
+}
