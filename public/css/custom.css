@@ -169,8 +169,20 @@ main p {
   text-align: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 20x;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 45px;
+  }
+  h3 {
+    font-size: 15x;
   }
 }

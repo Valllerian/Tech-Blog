@@ -31,7 +31,7 @@ A CMS-style blog site similar to a Wordpress site, where developers can publish 
 - Start the server:  `node server.js`  |  use the deployed app;
 
 
-Main Routes :
+Main User Routes :
 
 <br>
 <img alt="Main routes" src="assets/images/image01.jpg" />
